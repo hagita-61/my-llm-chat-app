@@ -1,12 +1,18 @@
-# React + Vite
+# my-llm-chat-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+キャリアアップ計画書-能力開発目標  
+「RAGやLLM環境構築に必要な知識の習得」- オリジナルLLMチャットアプリ
 
-Currently, two official plugins are available:
+## 概要
+- フロントエンド：React + Vite
+- バックエンド：FastAPI
+- オンラインデモ化してURL共有で即動作確認可能な形を目指します。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## セットアップ
 
-## Expanding the ESLint configuration
+### フロントエンド
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+cd frontend
+npm install
+npm run dev

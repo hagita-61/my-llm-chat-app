@@ -1,4 +1,6 @@
-# Logs
+# ========================
+# Node / Frontend
+# ========================
 logs
 *.log
 npm-debug.log*
@@ -7,18 +9,71 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+node_modules/
+dist/
+dist-ssr/
 *.local
 
-# Editor directories and files
-.vscode/*
+# ========================
+# Python / Backend
+# ========================
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.env
+.env.*
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Bytecode
+*.pyc
+
+# Logs and databases
+*.log
+
+# Testing
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+cython_debug/
+
+# Ruff
+.ruff_cache/
+
+# ========================
+# IDE / Editor
+# ========================
+.vscode/
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
-*.njsproj
+*.njsproj*
 *.sln
 *.sw?
+*.sublime-project
+*.sublime-workspace
+
+# ========================
+# System
+# ========================
+.DS_Store
+Thumbs.db
