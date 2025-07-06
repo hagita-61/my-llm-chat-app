@@ -16,7 +16,9 @@ const ChatApp = () => {
         setResponseText('');
 
         try {
-            const res = await axios.post('http://localhost:8000/chat', { text: inputText });
+            //const res = await axios.post('http://localhost:8000/chat', { text: inputText });
+            const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/chat`, { text: inputText });
+
             setResponseText(res.data.answer);
             setChatHistory(prev => [...prev, { question: inputText, answer: res.data.answer }]);
         } catch (error) {
